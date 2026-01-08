@@ -39,12 +39,14 @@ export default function Hero() {
           </p>
           <div className="flex gap-3">
             {skills.map((skill, index) => (
-              <p
-                className="text-sm px-3 py-1 bg-secondary rounded-md border"
+              <Button
+                variant={'secondary'}
+                size={'sm'}
+                className="border"
                 key={index}
               >
                 {skill}
-              </p>
+              </Button>
             ))}
           </div>
           <div className="space-x-3">
